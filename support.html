@@ -2,9 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>CIS 162 - Project 2: Support Page</title>
+    <link href="styles.css" rel="stylesheet" />
 </head>
+
+<header>
+    <div class="container">
+        <img src="images/proj2-initials.png" alt="REVCharge Initials Logo" class="navinitials"/>
+        <img src="images/proj2-logo.png" alt="REVCharge Logo" class= "navlogo" />
+
+         <nav class="horizontalNavigation">
+             <ul>
+                 <li>
+                    <a href="index.html">Home</a>
+                </li>
+                 <li>
+                     <a href="REVCharge.html">REVCharge</a>
+                 </li>
+                 <li>
+                     <a href="support.html">Support</a>
+                 </li>
+                 <li>
+                     <a href="career.html">Career</a>
+                 </li>
+             </ul>
+         </nav>
+    </div>
+</header>
+
 <body>
+    <div class="subsection1">
+        <img src="images/CIS 162 - Project 2 Support subsection1.jpg" alt="REVCharge Support Subsection Background 1" style="width:100%;">
+        <div class="top-left">
+            <h2>Support</h2>
+        </div>
+
+    <form>
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname"><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname">
+    </form>
+
+
+    <p>Please Select What Your Inquiry Is Regarding:</p>
+
+    <form>
+      <input type="radio" id="productionissues" name="fav_language" value="productionissues">
+      <label for="productionissues">Production Issues</label><br>
+      <input type="radio" id="css" name="fav_language" value="CSS">
+      <label for="css">CSS</label><br>
+      <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+      <label for="javascript">JavaScript</label>
+    </form>
 
 </body>
 </html>
