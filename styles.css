@@ -1,42 +1,174 @@
 @charset "utf-8";
+
 /*
-   Style Sheet for Styles used in CIS 162 - Project 2
+   CIS 162 - HTML & CSS
+   Style Sheet for the Layout of the CIS 162 Project 2
    Author: Miles Shinmachi
-   Date: March 25, 2022
-
+   Date: March 31, 2022
    Filename: styles.css
-
 */
 
-/* Grid Styles for Page Body */
-
 body {
+    background: #2E2B27;
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-areas: "header   header"
-                         "intro    faq"
-                         "articles faq"
-                         "footer   footer";
-    grid-column-gap; 15px;
+    grid-template-columns: 1fr;
+    color: red;
+
+}
+
+header {
+    text-align: center;
+}
+
+.horizontalNavigation ul{
+    list-style: none;
+    background: #2E2B27;
+    padding: 50;
+    margin: 0;
+    text-align: center;
+}
+
+.horizontalNavigation li{
+    display: inline-block;
+    text-align: center;
+}
+
+.horizontalNavigation a{
+    text-decoration: none;
+    color: #FF0505;
+    width: 200px;
+    display: block;
+    padding: 20px 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Times New Roman';
+    text-align: center;
+    font-size: 20px;
+
 }
 
 body > header {
-    grid-row: 1;
-    grid-column: 1/-1;
+ grid-row: 1;
+ grid-column: 1/-1;
 }
 
-body > article {grid-area: intro;}
-body > aside {grid-area: faq;}
-body > section {grid-area: articles;}
-body > footer {grid-area: footer;}
+img {
+    border-radius: 8px;
+    padding: 5px;
+}
+h1{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+}
 
-/* Grid Styles for Nested Grid */
+h2{
+    font-family: 'Times New Roman';
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+h3{
+    font-family: 'Times New Roman';
+    text-align: center;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-right: 50px;
+}
 
 section {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 25px;
+    column-gap: 25px;
 }
 
-section > h1 {
-    grid-area: 1/1/2/3;
+p {
+    position: left;
+    color: white;
+    margin: 75px 80px;
+}
+
+footer {
+    text-align: center;
+    color: white;
+}
+
+.navlogo {
+    position: absolute;
+    height: auto;
+    left: 180px;
+    width: 150px;
+    height: 70px;
+}
+
+.navinitials {
+    position: absolute;
+    height: auto;
+    right: 180px;
+    width: 150px;
+    height: 70px;
+}
+
+/* Container that contains the text and image */
+.subsection1 {
+    position: relative;
+    text-align: left;
+    color: white;
+}
+
+.subsection2 {
+    position: relative;
+    text-align: left;
+    color: white;
+}
+
+.subsection3 {
+    position: relative;
+    text-align: left;
+    color: white;
+}
+
+.subsection4 {
+    position: relative;
+    text-align: left;
+    color: white;
+}
+
+.left {
+    position: absolute;
+    left: 25px;
+    top: 50%;
+}
+
+.right {
+    position: absolute;
+    right: 25px;
+    top: 50%;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.center {
+    position: absolute;
+
 }
