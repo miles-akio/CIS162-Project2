@@ -12,7 +12,7 @@ body {
     background: #2E2B27;
     display: grid;
     grid-template-columns: 1fr;
-    color: red;
+    color: white;
 
 }
 
@@ -23,8 +23,8 @@ header {
 .horizontalNavigation ul{
     list-style: none;
     background: #2E2B27;
-    padding: 50;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
     text-align: center;
 }
 
@@ -91,7 +91,7 @@ section {
 }
 
 p {
-    position: left;
+    position: relative;
     color: white;
     margin: 75px 80px;
 }
