@@ -4,7 +4,7 @@
    CIS 162 - HTML & CSS
    Style Sheet for the Layout of the CIS 162 Project 2
    Author: Miles Shinmachi
-   Date: March 31, 2022
+   Date: April 15, 2022
    Filename: styles.css
 */
 
@@ -168,7 +168,10 @@ footer {
   right: 16px;
 }
 
+/*Center For Image */
 .center {
-    position: absolute;
-
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
