@@ -4,12 +4,29 @@
     <meta charset="UTF-8">
     <title>CIS 162 - Project 2: Support Page</title>
     <link href="styles.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Create three equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 10px;
+      height: 300px; /* Should be removed. Only for demonstration */
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    </style>
 </head>
-
-
-
 <body>
-
 <header>
     <div class="container">
         <img src="images/proj2-initials.png" alt="REVCharge Initials Logo" class="navinitials"/>
@@ -35,42 +52,67 @@
 </header>
 
     <div class="subsection1">
-        <img src="images/CIS%20162%20-%20Project%202%20Support%20subsection1.jpg" alt="REVCharge Support Subsection Background 1" style="width:100%;">
+        <img src="images/CIS%20162%20-%20Project%202%20Support%20subsection1.png" alt="REVCharge Career Subsection Background 1" style="width:100%;">
         <div class="top-left">
-            <h2>Support</h2>
+            <h2 style="color:black;">REVCharge Support</h2>
         </div>
     </div>
 
-    <p>Please Enter The Following Information Below:</p>
-    <form>
-        <label for="fname">First Name:</label><br>
-        <input type="text" id="fname" name="fname"><br>
-        <br>
-        <label for="lname">Last Name:</label><br>
-        <input type="text" id="lname" name="lname"><br>
-        <br>
-        <label for="email">Email Address:</label><br>
-        <input type="email" id="email"><br>
+<div class="row">
+  <div class="column">
+      <h4><strong><u>Please Enter The Following Information Below:</u></strong></h4>
+          <form>
+              <label for="fname">First Name:</label><br>
+              <input type="text" id="fname" name="fname"><br>
+              <br>
+              <label for="lname">Last Name:</label><br>
+              <input type="text" id="lname" name="lname"><br>
+              <br>
+              <label for="email">Email Address:</label><br>
+              <input type="email" id="email"><br>
+              <br>
+              <label for="country">Country:</label>
+              <select id="country" name="country">
+                  <option value="australia">Australia</option>
+                  <option value="canada">Canada</option>
+                  <option value="usa">USA</option>
+                  <option value="japan">Japan</option>
+                  <option value="britain">Great Britain</option>
+                  <option value="india">India</option>
+              </select>
+          </form>
+  </div>
 
-    </form>
 
-    <p>Please Select What Your Inquiry Is Regarding:</p>
-    <form>
-        <input type="radio" id="faultyproduct" name="fav_language" value="faultyproduct">
-        <label for="faultyproduct">Faulty Product</label><br>
-        <br>
-        <input type="radio" id="facultycomplaint" name="fav_language" value="facultycomplaint">
-        <label for="facultycomplaint">Faculty Complaint</label><br>
-        <br>
-        <input type="radio" id="other" name="fav_language" value="other">
-        <label for="other">Other</label><br>
-        <br>
+  <div class="column">
+      <h4><strong><u>Please Select What Your Inquiry Is Regarding:</u></strong></h4>
+          <form>
+              <input type="radio" id="faultyproduct" name="fav_language" value="faultyproduct">
+              <label for="faultyproduct">Faulty Product</label><br>
+                <br>
+              <input type="radio" id="facultycomplaint" name="fav_language" value="facultycomplaint">
+              <label for="facultycomplaint">Faculty Complaint</label><br>
+                <br>
+              <input type="radio" id="other" name="fav_language" value="other">
+              <label for="other">Other</label><br>
+                <br>
+          </form>
+  </div>
+  <div class="column">
+      <h4><strong><u>Please Type In Your Message:</u></strong></h4>
+      <form>
+          <label for="subject">Subject</label><br>
+          <textarea id="subject" name="subject" placeholder="Write something.."></textarea><br>
+            <br>
+          <input type="submit" value="Submit"><br>
+            <br>
+          <input type="reset" value="Reset"><br>
+      </form>
+  </div>
+</div>
+<br />
+<br />
 
-        <input type="submit" value="Submit"><br>
-        <br>
-        <input type="reset" value="Reset"><br>
+<footer> REVCharge © 2022 All Rights Reserved (P.S. This website is for a class assignment and understand that these images may belong to a company so please do not sue me for copyright. Thank you.)</footer>
 
-    </form>
-
-</body>
 </html>
