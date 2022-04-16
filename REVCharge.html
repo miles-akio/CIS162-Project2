@@ -2,60 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CIS 162 - Project 2: REVCharge Page</title>
     <link href="styles.css" rel="stylesheet" />
-    <style>
-        div.gallery {
-          border: 1px solid #ccc;
-        }
 
-        div.gallery:hover {
-          border: 1px solid #777;
-        }
+       <style>
+    * {
+      box-sizing: border-box;
+    }
 
-        div.gallery img {
-          width: 100%;
-          height: auto;
-        }
+    /* Create three equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 33.33%;
+      padding-left: 10px;
+      padding-right: 10px;
+      height: 300px;
+    }
 
-        div.desc {
-          padding: 15px;
-          text-align: center;
-        }
-
-        * {
-          box-sizing: border-box;
-        }
-
-        .responsive {
-          padding: 0 4px;
-          float: right;
-          width: 25%;
-        }
-
-        @media only screen and (max-width: 800px) {
-          .responsive {
-            width: 47.99999%;
-            margin: 4px 0;
-          }
-        }
-
-        @media only screen and (max-width: 500px) {
-          .responsive {
-            width: 100%;
-          }
-        }
-
-        .clearfix:after {
-          content: "";
-          display: table;
-          clear: both;
-        }
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
     </style>
+
+    <style>
+    h3.ex1 {
+      padding-left: 325px;
+      padding-right: 325px;
+    }
+    </style>
+
 </head>
 
 <body>
-
 <header>
     <div class="container">
         <img src="images/proj2-initials.png" alt="REVCharge Initials Logo" class="navinitials"/>
@@ -84,41 +66,38 @@
         <img src="images/CIS%20162%20-%20Project%202%20Product%20subsection1.jpg" alt="REVCharge Subsection Background 1" style="width:100%;">
     </div>
 
+    <h1><strong><u>About The Company</u></strong></h1>
 
-    <div class="responsive">
-      <div class="gallery">
-        <a target="_blank" href="CIS%20162%20-%20REVCharge%20Product%201.jpeg">
-          <img src="images/CIS%20162%20-%20REVCharge%20Product%201.jpeg" alt="REVCharge Product Angle 1" width="600" height="400"></a>
-        <div class="desc">The REVCharge Thunderbolt is the greatest accessory that you can invest in when purchasing a PHEV (Plug-In Hyor EV (Electric Vehicle)</div>
-      </div>
+    <div class="row">
+        <div class="column">
+            <h2>Sustainability</h2>
+            <center><h3>Our products are manufactured from 100% recycled materials in order to give customers a product that not only operates but comes from a company that cares about the environment that we all live in.</h3></center>
+        </div>
+        <div class="column">
+            <h2>Efficiency</h2>
+            <center><h3>Our product is built to provide a seamless transition of electric charge from our portable EV battery charger to your electric vehicles as well as PHEV (Plug-In Hybrid Electric Vehicle) batteries.</h3></center>
+        </div>
+        <div class="column">
+            <h2>Design</h2>
+            <center><h3>Our EV battery charger is dedicated to being the most efficient without sacrificing any design. The product shows crisp angles that not only make it stound out from the rest of the crowd but also provides elegance so that you can be proud of using ourp product wherever you may be.</h3></center>
+        </div>
     </div>
 
 
-    <div class="responsive">
-      <div class="gallery">
-        <a target="_blank" href="CIS%20162%20-%20REVCharge%20Product%202.jpeg">
-          <img src="images/CIS%20162%20-%20REVCharge%20Product%202.jpeg" alt="REVCharge Product Angle 2" width="600" height="400"></a>
-        <div class="desc">We're the world's 1st portable and affordable portable EV battery charger in the entire market!</div>
-      </div>
-    </div>
+    <h1><strong><u>Our Mission</u></strong></h1>
+    <center><h3 class="ex1">Here at REVCharge, we believe that electric vehicles are the future of transportation and for the planet. These new vehicles will help to maximize efficiency and to reduce our global carbon footprint so that the next generation after us can continue to live in a habitable world. The only issue that holds most consumers back from converting from gas to electric vehicles is the range and the uncertainity of the car battery dying on the driver during their commute.</h3></center>
+        <br />
+    <center><h3 class="ex1">But at REVCharge, we have solved this issue with the REVCharge Thunderbolt! We further extend your car's drive time so you can spend less time waiting at the charging stations and more time traveling to wherever your next adventure awaits! Our devices charges through multiple outlets so that it can be dependable and reliable for you in any situation that you may find yourself in whether its just a refill or stranded with no help!</h3></center>
+        <br />
+    <center><h3 class="ex1">Come join us and let's take Power-To-Go!</h3></center>
+        <br />
 
-    <div class="responsive">
-      <div class="gallery">
-        <a target="_blank" href="CIS%20162%20-%20REVCharge%20Product%203.jpeg">
-          <img src="images/CIS%20162%20-%20REVCharge%20Product%203.jpeg" alt="REVCharge Product Angle 3" width="600" height="400"></a>
-        <div class="desc">We're ranked number 1 by Forbes as the highest climbing company to rise within the EV market!</div>
-      </div>
-    </div>
-
-    <div class="responsive">
-      <div class="gallery">
-        <a target="_blank" href="CIS%20162%20-%20REVCharge%20Product%204.jpeg">
-          <img src="images/CIS%20162%20-%20REVCharge%20Product%204.jpeg" alt="REVCharge Product Angle 4" width="600" height="400"></a>
-        <div class="desc">Ready to push the boundaries of electricity or get left in the dust? The choice is yours.</div>
-      </div>
-    </div>
-
-    <div class="clearfix"></div>
+    <img src="images/proj2-logo.png" alt="REVCharge Logo" class="center">
+    <br />
 
 </body>
+
+<footer> REVCharge © 2022 All Rights Reserved (P.S. This website is for a class assignment and understand that these images may belong to a company so please do not sue me for copyright. Thank you.)</footer>
+
+
 </html>
