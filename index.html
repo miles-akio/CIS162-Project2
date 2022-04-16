@@ -4,12 +4,58 @@
     <meta charset="UTF-8">
     <title>CIS 162 - Project 2: Home Page</title>
     <link href="styles.css" rel="stylesheet" />
+
+    <style>
+    div.gallery {
+      border: 1px solid #ccc;
+    }
+
+    div.gallery:hover {
+      border: 1px solid #777;
+    }
+
+    div.gallery img {
+      width: 100%;
+      height: auto;
+    }
+
+    div.desc {
+      padding: 15px;
+      text-align: center;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .responsive {
+      padding: 0 6px;
+      float: left;
+      width: 24.99999%;
+    }
+
+    @media only screen and (max-width: 700px) {
+      .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+      }
+    }
+
+    @media only screen and (max-width: 500px) {
+      .responsive {
+        width: 100%;
+      }
+    }
+
+    .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    </style>
 </head>
 
-
-
 <body>
-
 <header>
     <div class="container">
         <img src="images/proj2-initials.png" alt="REVCharge Initials Logo" class="navinitials"/>
@@ -38,10 +84,10 @@
         <img src="images/CIS%20162%20-%20Project%202%20REVCharge%20subsection1.jpg" alt="REVCharge Subsection Background 1" style="width:100%;">
         <div class="top-left">
             <h2>We Believe In Electrifying Mobility By Bringing It On The Go!</h2>
-            <p>What is the one thing that EV owners fear the most? Running out of electricity during their commute. <br>
+            <h4>What is the one thing that EV owners fear the most? Running out of electricity during their commute. <br>
                 Here at REVCharge, we have identified this issue and have created a product that will relieve stress on those EV users with our product.... <br>
                 <br>
-                The REVCharge Thunderbolt!</p>
+                The REVCharge Thunderbolt!</h4>
         </div>
     </div>
 
@@ -49,13 +95,13 @@
         <img src="images/CIS%20162%20-%20Project%202%20REVCharge%20subsection2.jpg" alt="REVCharge Subsection Background 2" style="width:100%;">
         <div class="top-right">
             <h2>Have The Freedom To Recharge Anytime, Anywhere</h2>
-            <p>The REVCharge Thunderbolt is the only product of its kind. It's essentially a portable battery that is upscaled to support the voltage of an electric vehicle. <br>
+            <h4>The REVCharge Thunderbolt is the only product of its kind. It's essentially a portable battery that is upscaled to support the voltage of an electric vehicle. <br>
                 The REVCharge Thunderbolt Can Be Charged In Two Ways:
                 <br>
                 <br>
                     -   AC Outlet <br>
                     -   Built-In Solar Panel
-            </p>
+            </h4>
         </div>
     </div>
 
@@ -63,11 +109,11 @@
         <img src="images/CIS%20162%20-%20Project%202%20REVCharge%20subsection3.jpg" alt="REVCharge Subsection Background 3" style="width:100%;">
         <div class="top-left">
             <h2>Power To Go</h2>
-            <p>Our product, along with its variants, not only gives electric vehicle drivers more freedom but encourages other drivers to convert to electric powered vehicles <br>
+            <h4>Our product, along with its variants, not only gives electric vehicle drivers more freedom but encourages other drivers to convert to electric powered vehicles <br>
                Despite our mission statement being, "Power To Go", we at REVCharge also believe in creating a product that will help the environment. <br>
                The world's main issue is climate change, and carbon dioxide emissions from motorized vehicles is one of the main factors. <br>
                As a result, we as a company, feel it is our responsibility to not only create a eco-friendly product but one that influences a driver's mindset when it comes to EVs <br>
-            </p>
+            </h4>
         </div>
     </div>
 
@@ -75,26 +121,55 @@
         <img src="images/CIS%20162%20-%20Project%202%20REVCharge%20subsection4.jpg" alt="REVCharge Subsection Background 4" style="width:100%;">
         <div class="top-right">
             <h2>Stretching The Limits Of What's Possible!</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <br>
-                when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, <br>
-                but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, <br>
-                and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <h4>Imagine an era where you do not have to recharge over a period of time to charge your vehicle.<br>
+                At REVCharge, we are pushing those boundaries in hopes that that goal can be met later on into the future <br>
+                As we work each day, that mission is ingrained within us and our staff so we know what we are fighting for... <br>
+                And that is limitless transportation.
+            </h4>
         </div>
     </div>
 
-    <h2>
-        The REVCharge Thunderbolt
-    </h2>
+    <h2><strong><u>The REVCharge Thunderbolt</u></strong></h2>
 
-    <section>
 
-        <img src="images/CIS%20162%20-%20Project%202%20product1.jpg" alt="REVCharge Product 1" width="800" height="400">
-        <img src="images/CIS%20162%20-%20Project%202%20product2.jpg" alt="REVCharge Product 2" width="800" height="400">
-        <img src="images/CIS%20162%20-%20Project%202%20product3.jpg" alt="REVCharge Product 3" width="800" height="400">
-        <img src="images/CIS%20162%20-%20Project%202%20product4.jpg" alt="REVCharge Product 4" width="800" height="400">
 
-    </section>
-        <br>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="images/CIS%20162%20-%20REVCharge%20Product%201.jpeg">
+                <img src="images/CIS%20162%20-%20REVCharge%20Product%201.jpeg" alt="REVCharge Product Angle 1" width="300" height="300">
+            </a>
+            <div class="desc">Our product reimagines the limits of EVs</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="images/CIS%20162%20-%20REVCharge%20Product%202.jpeg">
+                <img src="images/CIS%20162%20-%20REVCharge%20Product%202.jpeg" alt="REVCharge Product Angle 2" width="300" height="300">
+            </a>
+            <div class="desc">Combining mobility and elegance</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="images/CIS%20162%20-%20REVCharge%20Product%203.jpeg">
+                <img src="images/CIS%20162%20-%20REVCharge%20Product%203.jpeg" alt="REVCharge Product Angle 3" width="300" height="300">
+            </a>
+            <div class="desc">The perfect portable charger for your car</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="images/CIS%20162%20-%20REVCharge%20Product%204.jpeg">
+                <img src="images/CIS%20162%20-%20REVCharge%20Product%204.jpeg" alt="REVCharge Product Angle 4" width="300" height="300">
+            </a>
+            <div class="desc">Compact & fits all kinds of trunks</div>
+        </div>
+    </div>
+    <br />
+
 
     <footer> REVCharge © 2022 All Rights Reserved (P.S. This website is for a class assignment and understand that these images may belong to a company so please do not sue me for copyright. Thank you.)</footer>
 
